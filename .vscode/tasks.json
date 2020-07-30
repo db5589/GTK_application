@@ -1,0 +1,47 @@
+{
+  "type": "shell",
+  "label": "gcc debug build active file - with GTK",
+  "command": "C:/msys64/mingw64/bin/gcc.exe",
+  "args": [          
+      "-g",
+
+            "-pthread",
+            "-IC:/msys64/mingw64/include/gtk-3.0",
+            "-IC:/msys64/mingw64/include/at-spi2-atk/2.0",
+            "-IC:/msys64/mingw64/include/at-spi-2.0",
+            "-IC:/msys64/mingw64/include/dbus-1.0",
+            "-IC:/msys64/mingw64/lib/x86_64-linux-gnu/dbus-1.0/include",
+            "-IC:/msys64/mingw64/include/gtk-3.0",
+            "-IC:/msys64/mingw64/include/gio-unix-2.0",
+            "-IC:/msys64/mingw64/include/cairo",
+            "-IC:/msys64/mingw64/include/libdrm",
+            "-IC:/msys64/mingw64/include/pango-1.0",
+            "-IC:/msys64/mingw64/include/harfbuzz",
+            "-IC:/msys64/mingw64/include/pango-1.0",
+            "-IC:/msys64/mingw64/include/fribidi",
+            "-IC:/msys64/mingw64/include/atk-1.0",
+            "-IC:/msys64/mingw64/include/cairo",
+            "-IC:/msys64/mingw64/include/pixman-1",
+            "-IC:/msys64/mingw64/include/freetype2",
+            "-IC:/msys64/mingw64/include/libpng16",
+            "-IC:/msys64/mingw64/include/gdk-pixbuf-2.0",
+            "-IC:/msys64/mingw64/include/libmount",
+            "-IC:/msys64/mingw64/include/blkid",
+            "-IC:/msys64/mingw64/include/uuid",
+            "-IC:/msys64/mingw64/include/glib-2.0",
+            "-IC:/msys64/mingw64/lib/x86_64-linux-gnu/glib-2.0/include",
+            "-IC:/msys64/mingw64/lib/glib-2.0/include",
+            "-IC:/msys64/mingw64/include/giomm-2.4/giomm",
+
+      "${file}",
+
+      "-o",
+      "${fileDirname}/${fileBasenameNoExtension}.exe"
+  ],
+  "options": {"cwd": "C:/msys64/mingw64/bin"},
+  "problemMatcher": ["$gcc"],
+  "group": {
+      "kind": "build",
+      "isDefault": true
+  }
+} 
