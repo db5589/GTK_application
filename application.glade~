@@ -383,6 +383,7 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="relief">none</property>
+                    <property name="uri">https://drive.google.com/file/d/1PMbHNSQVsLOccl6nq_pYp9z1OTqF_80Y/view?usp=sharing</property>
                     <child>
                       <object class="GtkButton" id="buttonLinked">
                         <property name="visible">True</property>
@@ -401,8 +402,8 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="x">129</property>
-                    <property name="y">193</property>
+                    <property name="x">130</property>
+                    <property name="y">100</property>
                   </packing>
                 </child>
                 <child>
@@ -415,8 +416,8 @@
                     <property name="receives_default">True</property>
                   </object>
                   <packing>
-                    <property name="x">281</property>
-                    <property name="y">74</property>
+                    <property name="x">250</property>
+                    <property name="y">100</property>
                   </packing>
                 </child>
               </object>

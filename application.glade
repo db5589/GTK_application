@@ -291,24 +291,6 @@
                   </object>
                 </child>
                 <child>
-                  <object class="GtkTreeView" id="ColumnList">
-                    <property name="width_request">285</property>
-                    <property name="height_request">420</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="level_indentation">1</property>
-                    <property name="tooltip_column">6</property>
-                    <child internal-child="selection">
-                      <object class="GtkTreeSelection" id="treeSelection">
-                        <property name="mode">multiple</property>
-                      </object>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="x">200</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkButton" id="buttonAddEvent">
                     <property name="label" translatable="yes">Add</property>
                     <property name="width_request">100</property>
@@ -363,6 +345,33 @@
                     <property name="y">175</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkScrolledWindow">
+                    <property name="width_request">285</property>
+                    <property name="height_request">420</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="shadow_type">in</property>
+                    <child>
+                      <object class="GtkTreeView" id="ColumnList">
+                        <property name="width_request">285</property>
+                        <property name="height_request">420</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="level_indentation">1</property>
+                        <property name="tooltip_column">6</property>
+                        <child internal-child="selection">
+                          <object class="GtkTreeSelection">
+                            <property name="mode">multiple</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">200</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="name">Calendar</property>
@@ -383,6 +392,7 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="relief">none</property>
+                    <property name="uri">https://drive.google.com/file/d/1PMbHNSQVsLOccl6nq_pYp9z1OTqF_80Y/view?usp=sharing</property>
                     <child>
                       <object class="GtkButton" id="buttonLinked">
                         <property name="visible">True</property>
