@@ -1,0 +1,2 @@
+------------ SQL --------------------
+gcc -Wl,--export-all-symbols -o application application.c -lsqlite3 `pkg-config --cflags --libs gtk+-3.0` <- Debug
