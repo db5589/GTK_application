@@ -23,6 +23,8 @@ GtkWidget *label1;
 GtkBuilder *builder;
 //calendar
 GtkCalendar *calendar1;
+//iconView
+GtkIconView *iconView1;
 //SQL
 GtkTreeViewColumn *column1; GtkTreeViewColumn *column2; GtkListStore *store; GtkTreeSelection *treeSelection; GtkCellRenderer *renderer;
 GtkTreeView *ColumnList; GtkEntry *entry1; GtkWidget *buttonAddEvent; GtkWidget *buttonClearEvent;
@@ -53,6 +55,9 @@ int main(int argc, char *argv[]) {
     buttondel = GTK_WIDGET(gtk_builder_get_object(builder, "buttondel")); buttonpower = GTK_WIDGET(gtk_builder_get_object(builder, "buttonpower")); buttonminus = GTK_WIDGET(gtk_builder_get_object(builder, "buttonminus")); buttonplus = GTK_WIDGET(gtk_builder_get_object(builder, "buttonplus")); buttonsame = GTK_WIDGET(gtk_builder_get_object(builder, "buttonsame"));
     label1 = GTK_WIDGET(gtk_builder_get_object(builder, "label1")); ColumnList = GTK_TREE_VIEW(gtk_builder_get_object(builder, "ColumnList")); entry1 = GTK_ENTRY(gtk_builder_get_object(builder, "entry1")); buttonAddEvent = GTK_WIDGET(gtk_builder_get_object(builder, "buttonAddEvent")); buttonClearEvent = GTK_WIDGET(gtk_builder_get_object(builder, "buttonClearEvent"));
     calendar1 = GTK_CALENDAR(gtk_builder_get_object(builder, "calendar1")); treeSelection = GTK_TREE_SELECTION(gtk_builder_get_object(builder, "treeSelection"));
+    
+    // ----------------------------- Iconview ----------------------------- 
+    iconView1 = GTK_ICON_VIEW(gtk_builder_get_object(builder, ""));
 
     time_t t = time(NULL);
     struct tm tm = *localtime(&t);
@@ -96,7 +101,10 @@ int main(int argc, char *argv[]) {
     gtk_window_set_position(GTK_WINDOW(windowStack), GTK_WIN_POS_CENTER);
 
     gtk_tree_view_set_headers_visible(GTK_TREE_VIEW(ColumnList), FALSE);
-// ----------------------------- main event -----------------------------
+    // ----------------------------- Icon view -----------------------------
+
+
+    // ----------------------------- main event -----------------------------
     gtk_widget_show(windowStack); //window must be visible 
     gtk_main(); //watch for ewent
         return EXIT_SUCCESS;
